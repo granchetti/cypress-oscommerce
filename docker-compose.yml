@@ -1,11 +1,10 @@
-version: '3.8'
+version: "3.8"
 services:
   cypress:
-    image: cypress/included:13.6.0
+    build: .
     environment:
       - "CYPRESS_BASE_URL=http://host.docker.internal:3000"
     working_dir: /e2e
     volumes:
       - .:/e2e
-      #- ./reports:/e2e/cypress/reports
     command: ["npx", "cypress", "run"]
