@@ -1,10 +1,12 @@
 version: "3.8"
 services:
   cypress:
-    build: .
+    image: cypress/included:13.6.0
     environment:
-      - "CYPRESS_BASE_URL=http://host.docker.internal:3000"
+      - CYPRESS_BASE_URL=http://host.docker.internal:3000
     working_dir: /e2e
     volumes:
       - .:/e2e
-    command: ["npx", "cypress", "run"]
+      - ./entrypoint.sh:/e2e/entrypoint.sh
+    entrypoint: /bin/bash
+    command: ["/e2e/entrypoint.sh"]

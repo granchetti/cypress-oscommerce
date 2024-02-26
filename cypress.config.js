@@ -17,9 +17,5 @@ module.exports = defineConfig({
     screenshotsFolder: 'cypress/reports/screenshots',
     videosFolder: 'cypress/reports/videos',
     video: true,
-
-  },
-  env: {
-    baseUrl: "",
   },
 });
