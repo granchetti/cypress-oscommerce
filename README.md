@@ -9,31 +9,36 @@
 - [Run test cases](#run-test-cases)
 - [Docker execution](#docker-execution)
 - [Report](#report)
+- [References](#references)
+
 
 
 ### Description
 
-E2E tests using Cypress and javascript.
+E2E tests using Cypress and Javascript.
 
 
 ### Prerequisites
 
-We need Node.js installed to execute the test. In particular, I used v19.8.1.
+You need Node.js installed to execute the test. In particular, I used v20.9.0.
 
 
 ### Instalation
 
-To install the framework, we must follow these steps:   
+To install the project, you must clone the repository in your computer:
 
-1. ``` 
-    git clone https://github.com/granchetti/cypress-oscommerce.git
-2. ```
-    npm install
+``` 
+git clone https://github.com/granchetti/cypress-oscommerce.git
+```
+Then, you have go to the root of the the repository and execute the following command:
+```
+npm install
+```  
 
 
 ### Run test cases 
 
-To run the test cases, you have to go to the toot of the project and execute the following commands:
+To run the test cases, you have to execute the following commands:
 
 ```
 npx cypress run || npm run test
@@ -42,7 +47,7 @@ npx cypress run || npm run test
 
 ### Docker execution
 
-I create a docker-compose to crete the docker image and save the data in a volum. To execute it you have to use this command:
+To execute the docker-compose file, you have to use the follwing command:
 
 ``` 
 docker-compose up
@@ -54,5 +59,9 @@ docker-compose up
 To see the report, you need to open the html file in /reports folder:
 
 ``` 
-open /reports/index.html
+open cypress/reports/index.html
 ```
+
+### References
+
+https://www.cypress.io/
