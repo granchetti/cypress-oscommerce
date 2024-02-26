@@ -52,10 +52,10 @@ npm run test
 
 ### Docker execution
 
-To execute the docker-compose file, you have to use the follwing command:
+To execute the docker-compose file, you just need to use the follwing command:
 
 ``` 
-docker-compose up
+docker-compose up --build
 ```
 
 
