@@ -1,0 +1,20 @@
+{
+    "logo": ".logo > img",
+    "addToCartButton": "#btn-cart > .add-to-cart",
+    "quantityInput": ".qty-inp-s",
+    "productPrice": ".item > .price",
+    "goToCartButton": ".right-buttons > .btn-2",
+    "summarySection": "#box-31752 > .heading-2",
+    "checkoutButton": ".with-card",
+    "shippingBox": "#box-31766",
+    "shippingFirstName": "#shipping_address-firstname",
+    "shippingLastName": "#shipping_address-lastname",
+    "streetAddress": "#shipping_address-street_address",
+    "postcode": "#shipping_address-postcode",
+    "city": "#shipping_address-city",
+    "emailAddress": "#checkout-email_address",
+    "paymentOptionCod": ".payment_class_cod > .item-radio > label > input",
+    "termsAndConditionsCheckbox": "#checkout-terms",
+    "confirmOrderButton": ".btn-title"
+  }
+  
